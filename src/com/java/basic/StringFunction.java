@@ -35,6 +35,8 @@ public class StringFunction {
 		}
 		
 		System.out.println("(5)");
+		System.out.println(String.join(",", letter6));
+		System.out.println(String.join(" ", letter6));
 		
 		System.out.println("(6)");
 		
