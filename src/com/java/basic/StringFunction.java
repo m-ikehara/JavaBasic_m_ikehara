@@ -43,6 +43,18 @@ public class StringFunction {
 		System.out.println(str2.substring(4));
 		
 		System.out.println("(7)");
+		System.out.println(str3.contains("soba"));
+		System.out.println(str3.contains("yaki"));
+		
+		System.out.println(str2.indexOf("soba"));
+		System.out.println(str3.indexOf("yaki"));
+		System.out.println(str3.indexOf("a"));
+		
+		System.out.println(str2.startsWith("soba"));
+		System.out.println(str2.endsWith("soba"));
+		System.out.println(str3.startsWith("soba"));
+		System.out.println(str3.endsWith("soba"));
+		
 		
 		System.out.println("(8)");
 		
