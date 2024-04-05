@@ -24,9 +24,15 @@ public class StringFunction {
 		System.out.println(str4 == null);
 		System.out.println(str5 == null);
 		System.out.println(str4.isEmpty());
-		System.out.println(str5.isEmpty());
+//		System.out.println(str5.isEmpty());
 		
 		System.out.println("(4)");
+		String str6 = "I like eleqhant better than giraffe.";
+		String[] letter6 = str6.split(" ");
+		
+		for(String word : letter6) {
+			System.out.println("word:" + word);
+		}
 		
 		System.out.println("(5)");
 		
