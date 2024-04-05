@@ -57,7 +57,8 @@ public class StringFunction {
 		
 		
 		System.out.println("(8)");
-		
+		String str7 = "I,like,elephant,better,than,giraffe";
+		System.out.println(str7.replace(",", " "));
 		System.out.println("(9)");
 		
 	}
