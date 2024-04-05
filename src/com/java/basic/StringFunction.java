@@ -19,7 +19,6 @@ public class StringFunction {
 		System.out.println(str2.equals("yakisoba"));
 		System.out.println(str2.equals("yaki" + str1));
 		
-		
 		System.out.println("(3)");
 		System.out.println(str4 == null);
 		System.out.println(str5 == null);
@@ -55,11 +54,16 @@ public class StringFunction {
 		System.out.println(str3.startsWith("soba"));
 		System.out.println(str3.endsWith("soba"));
 		
-		
 		System.out.println("(8)");
 		String str7 = "I,like,elephant,better,than,giraffe";
 		System.out.println(str7.replace(",", " "));
+		
 		System.out.println("(9)");
+		String format = "私の名前は、%sです。年齢は、%dです。";
+		System.out.println(String.format(format, "Mike",18));
+		System.out.println(String.format(format, "Cathy",20));
+		System.out.println(String.format(format, "Jon",25));
+		
 		
 	}
 
