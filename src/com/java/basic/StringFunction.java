@@ -7,6 +7,8 @@ public class StringFunction {
 		String str1 = "soba";
 		String str2 = "yakisoba";
 		String str3 = "sobakasu";
+		String str4 = "";
+		String str5 = null;
 
 		System.out.println("(1)");
 		System.out.println(str1.length());
@@ -19,6 +21,10 @@ public class StringFunction {
 		
 		
 		System.out.println("(3)");
+		System.out.println(str4 == null);
+		System.out.println(str5 == null);
+		System.out.println(str4.isEmpty());
+		System.out.println(str5.isEmpty());
 		
 		System.out.println("(4)");
 		
