@@ -14,6 +14,9 @@ public class StringFunction {
 		System.out.println(str3.length());
 		
 		System.out.println("(2)");
+		System.out.println(str2.equals("yakisoba"));
+		System.out.println(str2.equals("yaki" + str1));
+		
 		
 		System.out.println("(3)");
 		
