@@ -9,11 +9,14 @@ public class ObjectMain1 {
 		
 		
 		//インスタンス化しているよ！
-		Calculator calcuA = new Calculator();
-		Calculator calcuB = new Calculator();
+		Calculator calcuA = new Calculator(x);
+		Calculator calcuB = new Calculator(x);
+		
+		System.out.println("計算機Aの結果 :" + calcuA.getResult());
+		System.out.println("計算機Bの結果 :" + calcuB.getResult());
 		
 		calcuA.init(x);
-		calcuA.add(y);
+		calcuA.mult(y);
 		calcuA.div(2);
 		
 		calcuB.init(x);
