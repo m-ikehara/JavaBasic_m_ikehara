@@ -12,13 +12,13 @@ public class Calculator {
 	
 	//コンストラクタ2
 	public Calculator(String name , int x) {
-			this.name = name;
+			this(name);
 			this.result = x;
 		}
 		
 	//コンストラクタ3
 	public Calculator(String name , double x) {
-		    this.name = name;
+		    this(name);
 			this.result = x;
 		}
 	
