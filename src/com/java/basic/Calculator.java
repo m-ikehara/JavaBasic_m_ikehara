@@ -3,11 +3,24 @@ package com.java.basic;
 public class Calculator {
 	
 	double result;
+	String name;
 	
-	//コンストラクタ
-	public Calculator(int x) {
-		this.result = x;
+	//コンストラクタ1
+	public Calculator(String name) {
+		this.name = name;
 	}
+	
+	//コンストラクタ2
+	public Calculator(String name , int x) {
+			this.name = name;
+			this.result = x;
+		}
+		
+	//コンストラクタ3
+	public Calculator(String name , double x) {
+		    this.name = name;
+			this.result = x;
+		}
 	
 	public void init(int a) {
 		this.result = a;
@@ -35,6 +48,10 @@ public class Calculator {
 	
 	public double getResult() {
 		return this.result;
+	}
+	
+	public String getName() {
+		return this.name;
 	}
 }
 
