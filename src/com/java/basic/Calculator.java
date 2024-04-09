@@ -62,5 +62,14 @@ public class Calculator {
 	public String getName() {
 		return this.name;
 	}
+	
+	public void setResult(double x) {
+		x = Math.abs(x);
+		this.result = x;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
 }
 
