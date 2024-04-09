@@ -12,6 +12,7 @@ public class ObjectMain1 {
 		Calculator calcuA = new Calculator("計算機A");
 		Calculator calcuB = new Calculator("計算機B",1.5);
 		
+		System.out.println("計算機の商品名:" + Calculator.PRODUCT_NAME);
 		System.out.println("計算機の製造個数 :" + Calculator.countCalcu);
 		
 		System.out.println(calcuA.getName() + "の結果 :" + calcuA.getResult());

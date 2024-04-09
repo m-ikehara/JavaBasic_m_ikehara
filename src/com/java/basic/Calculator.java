@@ -6,6 +6,7 @@ public class Calculator {
 	String name;
 	
 	static int countCalcu;
+	static final String PRODUCT_NAME = "SPECIAL CALCULATOR XXX";
 	
 	//コンストラクタ1
 	public Calculator(String name) {
