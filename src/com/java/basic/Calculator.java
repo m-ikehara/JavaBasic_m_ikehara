@@ -5,9 +5,12 @@ public class Calculator {
 	double result;
 	String name;
 	
+	static int countCalcu;
+	
 	//コンストラクタ1
 	public Calculator(String name) {
 		this.name = name;
+		countCalcu++;
 	}
 	
 	//コンストラクタ2
