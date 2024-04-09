@@ -13,9 +13,9 @@ public class TestData {
 		this.name = name;
 	}
 
-	public TestData(int score) {
-		this.score = score;
-	}
+//	public TestData(int score) {
+//		this.score = score;
+//	}
 
 	// getterとsetterを定義
 	public int getScore() {
