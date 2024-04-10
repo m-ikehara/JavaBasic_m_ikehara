@@ -34,6 +34,5 @@ public abstract class AlarmWatch implements AlarmWatchInterface{
 	}
 	
 	//抽象メソッドalarmを定義（戻り値、引数ナシ）する処理を追加
-	public void alarm() {
-	}
+	abstract public void alarm();
 }
