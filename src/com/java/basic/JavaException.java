@@ -13,13 +13,13 @@ public class JavaException {
 			result = a/b;
 			System.out.println(result);
 			System.out.println(str.length());
-			
+					
 		}catch(NullPointerException e) {
 			System.out.println("NullPointExceptionエラーが発生しました。");
-			e.printStackTrace();
 		}catch(ArithmeticException e) {
 			System.out.println("AeithmeticExceptionエラーが発生しました。");
-			e.printStackTrace();
+		}finally {
+			System.out.println("データを保存しました。");
 		}
 	}
 
