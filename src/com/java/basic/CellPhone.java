@@ -20,7 +20,7 @@ public class CellPhone {
 	
 	//メールを送るメソッド
 	public void sendMail(String mailAddress,String Message) {
-		System.out.println(this.getOwnerName() + "から" +mailAddress + "へ" + Message + "とメールを送ります。");
+		System.out.println(this.getOwnerName() + "から" +mailAddress + "へとメールを送ります。");
 	}
 	
 	//オーナー情報取得

@@ -9,7 +9,7 @@ public class SmartPhone extends CellPhone {
 	
 	@Override
 	public void sendMail(String mailAddress,String Message) {
-		System.out.println(this.getOwnerName() + "から" + mailAddress + "へ" + Message + "とメールアプリを使って送ります。" )
+		System.out.println(this.getOwnerName() + "から" + mailAddress + "へ" + Message + "とメールアプリを使って送ります。" );
 	}
 	
 	public void appOpen(String application) {
