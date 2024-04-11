@@ -1,18 +1,27 @@
 package com.java.basic;
 
-import java.util.function.IntToDoubleFunction;
+import java.util.HashMap;
 
 public class Lambda {
 
 	public static void main(String[] args) {
 		
-		int a = 5;
+		HashMap<Integer,String> map = new HashMap<Integer,String>();
 		
-		IntToDoubleFunction func = x -> {return x * x * Math.PI;};
+		map.put(1,"睦月");
+		map.put(2,"如月");
+		map.put(3,"弥生");
+		map.put(4,"卯月");
+		map.put(5,"五月");
+		map.put(6,"水無月");
+		map.put(7,"文月");
+		map.put(8,"葉月");
+		map.put(9,"長月");
+		map.put(10,"神無月");
+		map.put(11,"霜月");
+		map.put(12,"師走");
 		
-		System.out.println(func.applyAsDouble(a));
-		
-		System.out.println(func);
+		map.keySet().stream().forEach(i -> System.out.println(i + "月" + map.get(i)));
 
 	}
 
