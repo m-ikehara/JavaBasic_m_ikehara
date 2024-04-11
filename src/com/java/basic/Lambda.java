@@ -1,17 +1,16 @@
 package com.java.basic;
 
-import java.util.function.IntBinaryOperator;
+import java.util.function.IntToDoubleFunction;
 
 public class Lambda {
 
 	public static void main(String[] args) {
 		
-		int x = 10;
-		int y = 15;
+		int a = 5;
 		
-		IntBinaryOperator func = (int a, int b) -> {return a + b;};
+		IntToDoubleFunction func = x -> {return x * x * Math.PI;};
 		
-		System.out.println(func.applyAsInt(x, y));
+		System.out.println(func.applyAsDouble(a));
 		
 		System.out.println(func);
 
