@@ -4,10 +4,12 @@ public class MobilePhone {
 	
 	String user;
 	String phoneNo;
+	String language;
 	
 	MobilePhone(String user,String phoneNo) {
 		this.user = user;
 		this.phoneNo = phoneNo;
+		this.language = LanguageSetting.setLanguage(LanguageSetting.DEFAULT_LANGUAGE);
 	}
 	
 	public void sendMail(String sendTo , String message) {
@@ -17,9 +19,17 @@ public class MobilePhone {
 		mailApp.endApp();
 	}
 	
+	//言語設定を行う
+	public void setLanguage(String language) {
+		this.language = LanguageSetting.setLanguage(language);
+		System.out.println("言語を" + this.language + "に設定しました。 \n");
+	}
+	
+	//インナークラスの定義
 	private class MailApplication {
 		
 		MailApplication() {
+			
 			System.out.println("メールアプリを開きました。");
 		}
 
@@ -32,6 +42,22 @@ public class MobilePhone {
 		
 		void endApp() {
 			System.out.println("メールアプリを閉じました。");
+		}
+	}
+	
+	static class LanguageSetting {
+		
+		static final String DEFAULT_LANGUAGE = "英語";
+		
+		static String setLanguage(String language) {
+			if("英語".equals(language) || "English".equals(language)) {
+				return "英語";
+			}
+			else if("日本語".equals(language) || "Japanese".equals(language)) {
+				return "日本語";
+			}else {
+				return DEFAULT_LANGUAGE;
+			}
 		}
 	}
 	
