@@ -9,7 +9,7 @@ public class MobilePhone {
 	MobilePhone(String user,String phoneNo) {
 		this.user = user;
 		this.phoneNo = phoneNo;
-		this.language = LanguageSetting.setLanguage(LanguageSetting.DEFAULT_LANGUAGE);
+		this.language = LanguageSetting.setLanguage(Languages.ENGLISH);
 	}
 	
 	public void sendMail(String sendTo , String message) {
@@ -20,7 +20,7 @@ public class MobilePhone {
 	}
 	
 	//言語設定を行う
-	public void setLanguage(String language) {
+	public void setLanguage(Languages language) {
 		this.language = LanguageSetting.setLanguage(language);
 		System.out.println("言語を" + this.language + "に設定しました。 \n");
 	}
@@ -43,22 +43,29 @@ public class MobilePhone {
 		void endApp() {
 			System.out.println("メールアプリを閉じました。");
 		}
+		
 	}
 	
 	static class LanguageSetting {
 		
-		static final String DEFAULT_LANGUAGE = "英語";
-		
-		static String setLanguage(String language) {
-			if("英語".equals(language) || "English".equals(language)) {
+		static String setLanguage(Languages language) {
+			if(Languages.JAPANESE == language) {
+				return "日本語";
+			}
+			else if(Languages.CHINESE == language) {
+				return "中国語";
+			}else {
 				return "英語";
 			}
-			else if("日本語".equals(language) || "Japanese".equals(language)) {
-				return "日本語";
-			}else {
-				return DEFAULT_LANGUAGE;
-			}
 		}
+		
+	}
+	
+	enum Languages {
+		
+		ENGLISH
+		,JAPANESE
+		,CHINESE
 	}
 	
 }
